@@ -18,9 +18,14 @@
     I'm working right now to make this site, so... you'll have to wait until it's done. Anyway, thank you for your visit! 
   </h2>
 
-  <button type="button" data-loading-text="Loading..." class="btn btn-primary">
-  <%= link_to "Go to Posts!", 'posts' %>
-  </button>
+
+  <%= content_tag :a, "Posts!", :href => "#modal", :class => 'btn', :data => {:toggle => 'modal'} %>
+
+  <%= modal_dialog :id => "modal",
+         :header => { :show_close => true, :dismiss => 'modal', :title => 'Modal header' },
+                 :body   => 'Hey, there is no posts yet :c. Hope see you soon!',
+                 :footer => content_tag(:button, 'Exit', :class => 'btn')
+  %>
 
 
 </div>
