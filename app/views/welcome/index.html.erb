@@ -18,24 +18,7 @@
     I'm working right now to make this site, so... you'll have to wait until it's done. Anyway, thank you for your visit! 
   </h2>
 
-	<div id="windowTitleDialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="windowTitleLabel" aria-hidden="true">
-		<div class="modal-header">
-			<a href="#" class="close" data-dismiss="modal">&times;</a>
-			<h3>Sorry, there is no posts right now :c</h3>
-			<h3>Hope see you soon!</h3>
-		</div>
-		<div class="modal-body">
-
-		</div>
-		<div class="modal-footer">
-			<a href="#" class="btn" onclick="closeDialog ();">OK
-			</a>
-		</div>
-	</div>
-	<div class="divButtons">
-		<a data-toggle="modal" href="#windowTitleDialog" class="btn btn-primary btn-large">
-			Go to posts!</a>
-	</div>
+  <%= link_to "Posts", '#', class: "btn btn-large btn-primary" %>
 
 </div>
 
