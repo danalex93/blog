@@ -5,27 +5,24 @@
     I'm working right now to make this site, so... you'll have to wait until it's done. Anyway, thank you for your visit! 
   </h2>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Sorry</h4>
-        </div>
-        <div class="modal-body">
-          <a>There is no posts yet :c</a>
-          <a>Please comeback soon!</a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+	<div id="windowTitleDialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="windowTitleLabel" aria-hidden="true">
+		<div class="modal-header">
+			<a href="#" class="close" data-dismiss="modal">&times;</a>
+			<h3>Sorry, there is no posts right now :c</h3>
+			<h3>Hope see you soon!</h3>
+		</div>
+		<div class="modal-body">
 
-  <!-- Button trigger modal -->
-  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Posts!</a>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" onclick="closeDialog ();">OK
+			</a>
+		</div>
+	</div>
+	<div class="divButtons">
+		<a data-toggle="modal" href="#windowTitleDialog" class="btn btn-primary btn-large">
+			Go to posts!</a>
+	</div>
 
 </div>
 
