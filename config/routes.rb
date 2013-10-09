@@ -1,3 +1,4 @@
 Blog::Application.routes.draw do
-  root 'application#index'
+  get "welcome/index"
+  root 'welcome#index'
 end
