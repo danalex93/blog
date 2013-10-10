@@ -1,5 +1,6 @@
 <h1>Listing posts</h1>
 
+<div class="center hero-unit">
 <table>
   <tbody>
     <% @posts.each do |post| %>
@@ -16,3 +17,4 @@
 </table>
 
 <%= link_to 'New Post', new_post_path %>
+</div>
