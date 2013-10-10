@@ -1,9 +1,9 @@
-<h1>Listing posts</h1>
+<h1><span class="label label-primary">My posts</span></h1>
 
 <div class="center hero-unit">
 <table>
   <tbody>
-    <% @posts.each do |post| %>
+    <% @posts.reverse_each do |post| %>
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
@@ -17,5 +17,4 @@
 </table>
 
 <a href=<%= new_post_path %> class="btn btn-primary btn-large">New Post</a> 
-<%= link_to 'New Post', new_post_path %>
 </div>
