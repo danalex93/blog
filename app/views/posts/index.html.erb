@@ -2,25 +2,23 @@
 <p> </p>
 <div class="center hero-unit">
 <table>
-  <tbody>
-<% @posts.reverse_each do |post| %>
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">  
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-            <%= post.title %>
+<tbody>
+  <% @posts.reverse_each do |post| %>
+    <div class="accordion" id="accordion2">
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+          <%post.title %>
           </a>
-        </h4>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <%= post.body %>
+        </div>
+        <div id="collapseOne" class="accordion-body collapse in">
+          <div class="accordion-inner">
+            <%= post.body %>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   <% end %>
-  </tbody>
+</tbody>
 </table>
 </div>
