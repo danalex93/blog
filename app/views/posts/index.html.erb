@@ -8,12 +8,12 @@
       <div class="accordion-group">
         
         <div class="accordion-heading">
-          <h3 class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+          <h3 class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href=<%= post.title %>>
             <%= post.title %>
           </h3>
         </div>
 
-        <div id="collapseOne" class="accordion-body collapse in">
+        <div id=<%= post.title %> class="accordion-body collapse in">
           <div class="accordion-inner">
             <p> <%= post.body %> </p>
           </div>
