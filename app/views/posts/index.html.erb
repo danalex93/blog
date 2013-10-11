@@ -3,16 +3,24 @@
 <div class="center hero-unit">
 <table>
   <tbody>
-    <% @posts.reverse_each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= post.published %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+<% @posts.reverse_each do |post| %>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> 
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <%= post.title %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <%= post.body %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
   </tbody>
 </table>
 </div>
