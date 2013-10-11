@@ -1,3 +1,16 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.accordion-heading accordion-toggle {
+    background: none repeat scroll 0 0 #B0B0B0;
+    display: block;
+    padding: 8px 15px;
+}
+
+
+.accordion-inner {
+    background: none repeat scroll 0 0 #E0E0E0;
+    border-top: 1px solid #E5E5E5;
+    padding: 9px 15px;
+}
