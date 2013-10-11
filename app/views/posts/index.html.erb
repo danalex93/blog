@@ -3,17 +3,18 @@
 <div class="center hero-unit">
 <table>
 <tbody>
+  <% i = 0 %>
   <% @posts.reverse_each do |post| %>
     <div class="accordion" id="accordion2">
       <div class="accordion-group">
         
         <div class="accordion-heading">
-          <h3 class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href=<%= "##{post.title.gsub(" ","_")}" %>>
+          <h3 class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href=<%= "##{i}" %>>
             <%= post.title %>
           </h3>
         </div>
 
-        <div id=<%= post.title.gsub(" ","_") %> class="accordion-body collapse in">
+        <div id=<%= i %> class="accordion-body collapse in">
           <div class="accordion-inner">
             <p> <%= post.body %> </p>
           </div>
@@ -21,6 +22,7 @@
 
       </div>
     </div>
+    <% i += 1 %>
   <% end %>
 </tbody>
 </table>
