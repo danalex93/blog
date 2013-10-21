@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
-  # GET /posts.json
+  # GET /posts.jso
 
   http_basic_authenticate_with name: "admin", password: "supersecretpassword", except: [:index, :show]
 
