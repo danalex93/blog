@@ -9,3 +9,7 @@ Blog::Application.routes.draw do
   root 'welcome#index'
 
 end
+
+resources :posts do
+  resources :comments
+end
