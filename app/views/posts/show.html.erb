@@ -2,8 +2,42 @@
 
 <span class="label label-primary"><h1><%= @post.title %></h1></span>
 <p> </p>
-<div class="center hero-unit">
+<div class="hero-unit">
 	<p> <%= @post.body %> </p>
+</div>
+
+<h2>Comments</h2>
+<div class="hero-unit">
+<% if @post.comments.any? %>
+	<% @post.comments.each do |comment| %>
+	  <p>
+	    <strong><%= comment.commenter %></strong> 
+	  </p>
+	 
+	  <p>
+	    <%= comment.body %>
+	  </p>
+	<% end %>
+<% else %>
+	<p> This post doesn't have any comments yet, be the first one! </p>
+<% end %>
+</div>
+
+<h2>Add a comment:</h2>
+<div class="hero-unit">
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %>
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
 </div>
 
 <%= button_to 'Back', posts_path, :method => :get %>
