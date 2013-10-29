@@ -1,19 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<span class="label label-primary"><h1><%= @post.title %></h1></span>
+<p> </p>
+<div class="center hero-unit">
+	<p> <%= @post.body %> </p>
+</div>
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
-
-<p>
-  <strong>Published:</strong>
-  <%= @post.published %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= button_to 'Edit', edit_post_path(@post), :method => :get %> |
+<%= button_to 'Back', posts_path, :method => :get %>
