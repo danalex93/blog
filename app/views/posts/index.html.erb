@@ -13,6 +13,7 @@
     <div id=<%= i %> class="accordion-body collapse">
       <div class="accordion-inner">
         <p> <%= post.body %> </p>
+        <p href= <%= link_to 'Read More!', post %> class="btn btn-primary btn-large"></p>
       </div>
     </div>
     <% i += 1 %>
