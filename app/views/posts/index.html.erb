@@ -13,8 +13,7 @@
     <div id=<%= i %> class="accordion-body collapse">
       <div class="accordion-inner">
         <p> <%= post.body %> </p>
-        <%= button_to 'Show', post %>
-        <button href= <%= link_to 'Read More!', post %> class="btn btn-primary"></button>
+        <%= button_to 'Read more!', post, :method => :get %>
       </div>
     </div>
     <% i += 1 %>
