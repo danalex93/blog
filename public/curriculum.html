@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="main.css" />
 
 		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
 
 		<script src="js/animations.js"></script>
 		<script src="http://jarallax.com/download/jarallax-min-0.2.js" type="text/javascript"></script>
@@ -15,46 +16,41 @@
     	<script src="script.js"></script>
 
     	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#arriba').click(function(){ //Id del elemento cliqueable
-				$('html, body').animate({scrollTop:0}, 'slow');
-				return false;
+			$(document).ready(function() {
+				$('#arriba').click(function(){ //Id del elemento cliqueable
+					$('html, body').animate({scrollTop:0}, 'slow');
+					return false;
+				});
 			});
-		});
-</script>
-
+		</script>
+		<script>
+			function ecoFunction(){
+				alert("Please print only if necessary.\nThank you for saving trees! c:");
+			}
+		</script>
 	</head>
 	
 	<body onload="init()">
-
 		<header class="navbar navbar-fixed-top navbar-inverse">
-			<div class="navbar-inner">
-				<div id="menu" class="container">
-					<ul class="nav navbar-nav">
-						<a class="navbar-brand" href="http://daniel.devwith.us">DanAlex93</a>
-						<li>
-							<a id="arriba" href='#'>Home</a>
-						</li>
-						<li>
-							<a href="#p1">Personal</a>
-						</li>
-						<li>
-							<a href="#p2">Ideals</a>
-						</li>
-						<li>
-							<a href="#p3">Education</a>
-						</li>
-						<li>
-							<a href="#p4">Experience</a>
-						</li>
-						<li>
-							<a href="#p5">Knowledges</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-
+		 	<div class="navbar-inner">
+		    	<div class="container">
+		        	<ul class="nav navbar-nav">
+		        		<a class="navbar-brand" href="http://daniel.devwith.us">DanAlex93</a>
+		    	      	<li><a href="http://daniel.devwith.us">Home</a></li>
+			          	<li><a href="http://daniel.devwith.us/posts">Posts</a></li>
+			        	<li><a href="http://daniel.devwith.us/works">Works</a></li>
+			        	<li><a href="http://daniel.devwith.us/about">About me</a></life>
+			        	<li><a href="/DAMMcv.pdf" onclick="ecoFunction()"><span class="glyphicon glyphicon-file"></span>Printable Version</a></li>
+		        	</ul>
+		    	</div>
+		  	</div>
 		</header>
+
+
+
+		<p id="p0">
+			Welcome to my CV, if you want a printable version click on the header's link.<br> To see this dynamic version, scroll-down.
+		</p>
 
 		<div id="contenido" class="content">
 			<span class="bckgrnd"></span>
@@ -65,7 +61,7 @@
 				<b>Citizenship</b>: Chilean<br>
 				<b>Age</b>: 20<br>
 				<b>Marital status</b>: Single<br>
-				<b>Occupation</b>: Student at <a href="http://www.usm.cl/" target="_blank">Universidad T&eacute;cnica Federico Santa Mar&iacute;a</a> and Bass Player at <strike>Still No Name</strike> band.
+				<b>Occupation</b>: Student at Universidad T&eacute;cnica Federico Santa Mar&iacute;a and Bass Player at <strike>Still No Name</strike> band.
 			</p>
 			
 			<h2 id="head2">My ideals:</h2>

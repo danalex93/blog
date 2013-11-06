@@ -44,7 +44,7 @@ h2 {
 
 body{
 	font-family: arial, sans-serif, verdana;
-	height:2280px;
+	height:2400px;
 	color:white;
 	margin:0;
 	padding:0;
@@ -72,10 +72,14 @@ a{
 	color:#57caff;
 }
 
+.pull-right {
+    float: none;
+}
+
 p{
 	font-size: 22px;
 	width: 800px;
-	position: fixed;
+	position: absolute;
 	left: 200px;
 	top: 255px;
 	background: rgba(0, 0, 0, 0.5);

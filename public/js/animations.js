@@ -4,10 +4,9 @@ init = function(){
       jarallax.setDefault('h2, #p1, #p2, #p3, #p4, #p5', {opacity:'0'});
       jarallax.setDefault('#p1, #p2, #p3, #p4, #p5', {marginLeft:'-1000px'});
       
-      jarallax.addAnimation('.planet2',[{progress: "0%", top:"70%"}, {progress: "100%", top: "40%"}]);
-      jarallax.addAnimation('.planet1',[{progress: "0%", top:"90%"}, {progress: "100%", top: "-5%"}]);
-      jarallax.addAnimation('.planet0',[{progress: "0%", top:"0%"}, {progress: "100%", top: "-10%"}]);
-      
+
+      jarallax.addAnimation('#p0',[{progress: "0%", opacity:"1"}, {progress: "5%", opacity:"0"}]);
+
       // 0 - 20
       jarallax.addAnimation('#head1',[{progress: "0%", left:"-800px"}, {progress: "5%", left: "100px"}]);
       jarallax.addAnimation('#head1',[{progress: "5%", left:"100px"}, {progress: "20%", left: "150px"}]);
