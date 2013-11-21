@@ -138,12 +138,9 @@ p{
 
 .information{
 	position: absolute;
-	left: 100%;
+	width: 460px;
 	top: 100%;
 	margin-top: -46px;
 	margin-left: -137px;
-	margin-bottom: 100px;
-	background: rgba(0, 0, 0, 0.2);
-	padding: 10px 30px;
-	border-radius: 10px;
+	font-size: 14px;
 }
